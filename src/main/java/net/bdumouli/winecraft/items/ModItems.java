@@ -13,10 +13,10 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item GRAPE = registerItem("grape", new Item(new FabricItemSettings()));
+    public static final Item REDGRAPE = registerItem("redgrape", new Item(new FabricItemSettings()));
 
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries){
-        entries.add(GRAPE);
+        entries.add(REDGRAPE);
     }
 
     private static Item registerItem(String name, Item item){
