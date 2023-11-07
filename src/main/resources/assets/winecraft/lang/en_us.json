@@ -1,3 +1,6 @@
 {
-  "item.winecraft.redgrape": "Red Grape"
+  "item.winecraft.red_grape": "Red Grape",
+  "item.winecraft.white_grape": "White Grape",
+
+  "itemgroup.winecraft": "Winecraft"
 }

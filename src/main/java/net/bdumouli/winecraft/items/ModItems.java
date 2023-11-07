@@ -13,10 +13,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item REDGRAPE = registerItem("redgrape", new Item(new FabricItemSettings()));
+    public static final Item RED_GRAPE = registerItem("red_grape", new Item(new FabricItemSettings()));
+    public static final Item WHITE_GRAPE = registerItem("white_grape", new Item(new FabricItemSettings()));
 
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries){
-        entries.add(REDGRAPE);
+        entries.add(RED_GRAPE);
+        entries.add(WHITE_GRAPE);
     }
 
     private static Item registerItem(String name, Item item){
@@ -25,7 +27,7 @@ public class ModItems {
 
     public static void registerModItems(){
         Winecraft.LOGGER.info("Registering mod items for : " + Winecraft.MOD_ID);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodItemGroup);
+        //0ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodItemGroup);
     }
 
 }

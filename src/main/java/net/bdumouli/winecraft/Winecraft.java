@@ -1,5 +1,7 @@
 package net.bdumouli.winecraft;
 
+import net.bdumouli.winecraft.block.ModBlocks;
+import net.bdumouli.winecraft.items.ModItemGroups;
 import net.bdumouli.winecraft.items.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -12,6 +14,8 @@ public class Winecraft implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
