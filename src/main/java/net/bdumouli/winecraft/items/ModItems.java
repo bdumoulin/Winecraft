@@ -15,10 +15,12 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item RED_GRAPE = registerItem("red_grape", new Item(new FabricItemSettings()));
     public static final Item WHITE_GRAPE = registerItem("white_grape", new Item(new FabricItemSettings()));
+    public static final Item RED_WINE_BOTTLE = registerItem("red_wine_bottle", new Item(new FabricItemSettings()));
 
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries){
         entries.add(RED_GRAPE);
         entries.add(WHITE_GRAPE);
+        entries.add(RED_WINE_BOTTLE);
     }
 
     private static Item registerItem(String name, Item item){

@@ -16,6 +16,7 @@ public class ModItemGroups {
                     .icon(()->new ItemStack(ModItems.RED_GRAPE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RED_GRAPE);
                         entries.add(ModItems.WHITE_GRAPE);
+                        entries.add(ModItems.RED_WINE_BOTTLE);
                     }).build());
 
     public static void registerItemGroups(){
